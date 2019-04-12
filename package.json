@@ -1,0 +1,29 @@
+{
+  "name": "downldr",
+  "version": "1.0.0",
+  "description": "A simple downloader that prevents writing invalid files",
+  "main": "index.js",
+  "dependencies": {
+    "file-type": "10.10.0",
+    "request": "2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcosc90/downldr.git"
+  },
+  "keywords": [
+    "downloader",
+    "download",
+    "http"
+  ],
+  "author": "Marcos Casagrande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcosc90/downldr/issues"
+  },
+  "homepage": "https://github.com/marcosc90/downldr#readme"
+}
