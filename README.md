@@ -68,7 +68,7 @@ const downldr = require('downldr');
 
 const req = downldr('https://example.com/video.mp4')
 	.on('error', console.error)
-	.on('abort', () => console.log('Aborted!');
+	.on('abort', () => console.log('Aborted!'));
 
 req.abort();
 ```
