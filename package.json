@@ -1,6 +1,6 @@
 {
   "name": "downldr",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple downloader that prevents writing invalid files",
   "main": "index.js",
   "dependencies": {
