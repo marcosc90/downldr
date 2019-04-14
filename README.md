@@ -18,7 +18,7 @@ npm install downldr
 
 Returns a `PassThrough stream` with some extra events.
 
- - `complete`: When the target or piped stream is fully written.
+ - `complete`: When the target or returned stream is fully written.
  - `type`: Triggered when the file type is available & `filter` function is not passed or returned `true`.
  - `abort`: When the request is aborted.
 
@@ -120,7 +120,7 @@ But if the `Readable` stream fails, we end up with an empty file. To avoid that 
 ```javascript
 
 downldr('https://example.com/image', {
-	filter: type => type && type.mime.startsWith('image/')
+	filter: type => type.mime == 'image/png',
 	target: (ext) => fs.createWriteStream(`out.${ext}`)
 })
 .on('error', console.error)
