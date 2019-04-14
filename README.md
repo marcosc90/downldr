@@ -148,3 +148,6 @@ app.get('/download/:image', (req, res) => {
 	.pipe(res); // Nothing will be piped if 'error' is triggered
 });
 ```
+
+## License
+ISC
